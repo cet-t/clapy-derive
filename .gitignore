@@ -1,0 +1,8 @@
+.pypirc
+plan.md
+dist/
+.venv/
+.pytest_cache/
+tasks/
+tests/
+.claude/

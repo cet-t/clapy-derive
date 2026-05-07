@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.rs)",
+      "Bash(uv init *)",
+      "PowerShell(Get-ChildItem \"D:\\\\.repo\\\\clapy\" -Recurse -Force | Where-Object { $_.Name -ne \".git\" } | Select-Object FullName)",
+      "Bash(dir \"D:\\\\\\\\.repo\\\\\\\\clapy\")",
+      "PowerShell(Get-ChildItem \"D:\\\\.repo\\\\clapy\" -Force | ForEach-Object { $_.FullName })",
+      "Bash(uv *)",
+      "PowerShell(uv *)",
+      "PowerShell(Get-ChildItem \"D:\\\\.repo\\\\clapy\\\\src\" -Recurse | ForEach-Object { $_.FullName })",
+      "PowerShell(Rename-Item *)",
+      "PowerShell(Test-Path *)",
+      "PowerShell(Copy-Item *)",
+      "PowerShell(Get-ChildItem \"D:\\\\.repo\\\\clapy\\\\dist\" | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-Content *)"
+    ]
+  }
+}

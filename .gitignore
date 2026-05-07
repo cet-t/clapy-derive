@@ -6,3 +6,4 @@ dist/
 tasks/
 tests/
 .claude/
+__pycache__/

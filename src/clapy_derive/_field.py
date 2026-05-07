@@ -5,7 +5,7 @@ from typing import Any
 MISSING: Any = object()
 
 
-class Arg:
+class clapy_arg:
     """Metadata for a CLI argument field — mirrors clap's #[arg(...)] attribute."""
 
     def __init__(
@@ -19,8 +19,8 @@ class Arg:
         metavar: str | None = None,
         env: str | None = None,
     ) -> None:
-        self.short = short      # True=auto (first char), str=explicit char, False=off
-        self.long = long        # True=auto (field name), str=explicit name, False=off
+        self.short = short  # True=auto (first char), str=explicit char, False=off
+        self.long = long  # True=auto (field name), str=explicit name, False=off
         self.help = help
         self.default = default  # MISSING = required
         self.choices = choices
@@ -33,6 +33,6 @@ class Arg:
 
     def __repr__(self) -> str:
         return (
-            f"Arg(short={self.short!r}, long={self.long!r}, "
+            f"clapy_arg(short={self.short!r}, long={self.long!r}, "
             f"help={self.help!r}, default={self.default!r})"
         )

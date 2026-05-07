@@ -1,8 +1,6 @@
 """clapy-derive — a clap-inspired declarative CLI argument parser for Python."""
 
-from ._decorator import clapy_parser
-from ._field import Arg, MISSING
+from ._decorator import Parser, clapy_parser
+from ._field import MISSING, clapy_arg
 
-clapy_arg = Arg  # primary public alias
-
-__all__ = ["Arg", "clapy_arg", "clapy_parser", "MISSING"]
+__all__ = ["Parser", "clapy_arg", "clapy_parser", "MISSING"]
